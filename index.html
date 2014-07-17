@@ -11,7 +11,26 @@
       <h1>The Next Stand</h1>
     </header>
     <div class='content'>
-      
+      <div class='blurb'>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+          laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+          voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+          cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+      <section id='open'>
+        <h2>What Is An Open Standard?</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+          ullamco laboris nisi ut aliquip ex ea <a href=''>commodo</a> consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+          sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+          est laborum.
+        </p>
+      </section>
     </div>
     <!--
     XXX
@@ -35,13 +54,27 @@
     -->
     
     <footer>
+      <p>
+        <a href='http://creativecommons.org/publicdomain/zero/1.0/'>CC0</a> •
+        <a href='https://github.com/darobin/the-next-stand'>fork this</a> •
+        <a href='http://berjon.com/'>Robin Berjon</a> •
+        <a href='http://twitter.com/robinberjon'>@robinberjon</a>
+      </p>
+      <p class='last'>
+        Last updated on <span id='last-update'>...</span>
+      </p>
       <!--
         XXX
-          CC0
-          link to GH
-          sign
           last update
       -->
     </footer>
+    <script>
+      if (document.lastModified) {
+          document.lastModified.replace(/(\d\d)\/(\d\d)\/(\d{4})/, function (m, day, month, year) {
+              document.getElementById("last-update").textContent = [year, month, day].join("-");
+          });
+      }
+      
+    </script>
   </body>
 </html>

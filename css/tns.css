@@ -83,15 +83,22 @@ header h1 {
     margin: 0;
     font-weight:    100;
     color:  #fff;
+    font-size:  3em;
 }
 
-/* Basic Inlines */
+/* Basic Stuff */
+div.blurb {
+    font-style: italic;
+    margin-top: 2em;
+}
 a {
-    color:  #e67e22; /*rgb(239, 64, 54)*/
+    color:  rgb(239, 64, 54);
     text-decoration:    none;
 }
-
-/* Basic styles */
+h2 {
+    margin-top: 2em;
+    color:  rgb(239, 64, 54);
+}
 dt {
     font-weight:    bold;
 }
@@ -107,13 +114,20 @@ blockquote {
 footer {
     background: rgb(239, 64, 54);
     color:  #fff;
-    padding-top:    1em;
-    padding-bottom:    1em;
+    padding-top:    2em;
     text-align: right;
     clear:  both;
 }
 footer a {
-/*    color:  #fff;*/
+    color:  #fff;
+}
+footer p {
+    margin: 0;
+    padding: 0;
+    font-size:  1.2em;
+}
+p.last {
+    font-size:  0.8em;
 }
 
 @media print {
