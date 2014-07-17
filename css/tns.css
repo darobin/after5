@@ -1,0 +1,148 @@
+
+/* Fonts: Raleway */
+@font-face {
+    font-family: "Raleway";
+    src: url("../fonts/raleway-thin-webfont.eot");
+    src: url("../fonts/raleway-thin-webfont.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/raleway-thin-webfont.woff") format("woff"),
+         url("../fonts/raleway-thin-webfont.ttf") format("truetype");
+    font-weight: 100;
+    font-style: normal;
+}
+
+/* Fonts: Merriweather */
+@font-face {
+    font-family: "Merriweather";
+    src: url("../fonts/merriweather-light-webfont.eot");
+    src: url("../fonts/merriweather-light-webfont.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/merriweather-light-webfont.woff") format("woff"),
+         url("../fonts/merriweather-light-webfont.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Merriweather";
+    src: url("../fonts/merriweather-bold-webfont.eot");
+    src: url("../fonts/merriweather-bold-webfont.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/merriweather-bold-webfont.woff") format("woff"),
+         url("../fonts/merriweather-bold-webfont.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Merriweather";
+    src: url("../fonts/merriweather-bolditalic-webfont.eot");
+    src: url("../fonts/merriweather-bolditalic-webfont.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/merriweather-bolditalic-webfont.woff") format("woff"),
+         url("../fonts/merriweather-bolditalic-webfont.ttf") format("truetype");
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: "Merriweather";
+    src: url("../fonts/merriweather-lightitalic-webfont.eot");
+    src: url("../fonts/merriweather-lightitalic-webfont.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/merriweather-lightitalic-webfont.woff") format("woff"),
+         url("../fonts/merriweather-lightitalic-webfont.ttf") format("truetype");
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* Font Settings */
+body {
+    font-family:    Merriweather, serif;
+    color:  #333;
+}
+h1, h2, footer {
+    font-family:    Raleway, sans-serif;
+}
+
+
+/* Structure */
+html, body {
+    margin: 0;
+    padding:    0;
+}
+header, nav, div.content, footer {
+    max-width:  50em;
+    margin: auto;
+    padding:    0 1em;
+    display:    block;
+}
+p, li, dd, dt {
+    line-height:    1.8;
+}
+
+
+/* Page Header */
+header {
+    background: rgb(239, 64, 54);
+    padding-top:    4em;
+}
+header h1 {
+    margin: 0;
+    font-weight:    100;
+    color:  #fff;
+}
+
+/* Basic Inlines */
+a {
+    color:  #e67e22; /*rgb(239, 64, 54)*/
+    text-decoration:    none;
+}
+
+/* Basic styles */
+dt {
+    font-weight:    bold;
+}
+dd {
+    padding:    0 0 1em 2em;
+}
+blockquote {
+    margin: 1em 3em 1em 3em;
+    font-style: italic;
+}
+
+/* Footer */
+footer {
+    background: rgb(239, 64, 54);
+    color:  #fff;
+    padding-top:    1em;
+    padding-bottom:    1em;
+    text-align: right;
+    clear:  both;
+}
+footer a {
+/*    color:  #fff;*/
+}
+
+@media print {
+    header {
+        border-left:    none;
+        background: #fff;
+        color:  rgb(239, 64, 54);
+        padding:    0;
+    }
+    footer {
+        background: #fff;
+        color:  #000;
+        border-left:    none;
+        padding-right:  0;
+    }
+    a {
+        color:  #666;
+        border-bottom:  1px dotted #666;
+    }
+    a[href^="#fn-"], a.backlink {
+        color:  #333;
+        border-bottom:  none;
+    }
+    a[href^="http"]:after {
+        content: "  (" attr(href) ")";
+        color:  #333;
+        font-style: italic;
+    }
+    footer a[href^="http"]:after {
+        content:    "";
+    }
+}
