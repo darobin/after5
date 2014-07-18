@@ -1,37 +1,56 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
   <head>
-    <meta charset='utf-8'>
-    <meta name='viewport' content='width=device-width'>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
     <title>The Next Stand</title>
-    <link rel='stylesheet' href='css/release-the-kraken.css'>
+    <link rel="stylesheet" href="css/release-the-kraken.css">
   </head>
   <body>
     <header>
       <h1>The Next Stand</h1>
     </header>
-    <div class='content'>
-      <div class='blurb'>
+    <div class="content">
+      <div class="blurb">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-          laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-          voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-          cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          The idea that Web standards should be open and efforts to make them so have served us
+          well. Over time, however, the ways in which people build the Web have evolved. The ways in
+          which we cooperate have improved. Much that was experimental in open source projects a
+          decade or two ago, and even more that we never foresaw back then, now forms the bedrock of
+          Web development.
+        </p>
+        <p>
+          The manner in which we create Web standards today lags behind the Web community’s
+          common practices. In 2012, a small group of standards organisations came together to
+          affirm the principles of openness known as the “<a
+          href='http://open-stand.org/principles/'>Open Stand</a>”. Fine principles, but
+          no longer sufficient. In order to deliver on the Web’s promise, we need to operate so as
+          to grant the full Web community stewardship over the platform. The Web has disrupted many
+          aspects of technology. It is time to have it disrupt the way in which we produce Web
+          standards. That is the <em>Next Stand</em>.
+        </p>
+        <p>
+          Web technology is a commons. We need to manage it as such.
+        </p>
+        <p>
+          There is much to do but examples such as the
+          <a href='http://responsiveimages.org/'>RICG</a> or the
+          <a href='http://dom.spec.whatwg.org/'>DOM</a> show that it is within reach and
+          tell us of the pitfalls to avoid. This document is not intended to be final; rather, in
+          keeping with the principles it upholds, it is
+          <a href='https://github.com/darobin/the-next-stand'>open for all to edit</a>.
         </p>
         <!--
-          Make it clear this is in reference to OpenStand
           Make it clear that pull requests are welcome, even encouraged
-          Web technology is a commons. We need to manage it as such.
           RICG as a great example, we need more of this
         -->
       </div>
-      <section id='open'>
+      <section id="open">
         <h2>What Is An Open Standard?</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
           ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-          ullamco laboris nisi ut aliquip ex ea <a href=''>commodo</a> consequat. Duis aute irure dolor in
+          ullamco laboris nisi ut aliquip ex ea <a href="">commodo</a> consequat. Duis aute irure dolor in
           reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
           sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
           est laborum.
@@ -59,13 +78,13 @@
     
     <footer>
       <p>
-        <a href='http://creativecommons.org/publicdomain/zero/1.0/'>CC0</a> •
-        <a href='https://github.com/darobin/the-next-stand'>fork this</a> •
-        <a href='http://berjon.com/'>Robin Berjon</a> •
-        <a href='http://twitter.com/robinberjon'>@robinberjon</a>
+        <a href="http://creativecommons.org/publicdomain/zero/1.0/">CC0</a> •
+        <a href="https://github.com/darobin/the-next-stand">fork this</a> •
+        <a href="http://berjon.com/">Robin Berjon</a> •
+        <a href="https://twitter.com/robinberjon">@robinberjon</a>
       </p>
-      <p class='last'>
-        Last updated on <span id='last-update'>...</span>
+      <p class="last">
+        Last updated on <span id="last-update">...</span>
       </p>
       <!--
         XXX
@@ -74,11 +93,10 @@
     </footer>
     <script>
       if (document.lastModified) {
-          document.lastModified.replace(/(\d\d)\/(\d\d)\/(\d{4})/, function (m, day, month, year) {
+          document.lastModified.replace(/(\d\d)\/(\d\d)\/(\d{4})/, function (m, month, day, year) {
               document.getElementById("last-update").textContent = [year, month, day].join("-");
           });
       }
-      
     </script>
   </body>
 </html>

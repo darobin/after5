@@ -91,6 +91,9 @@ div.blurb {
     font-style: italic;
     margin-top: 2em;
 }
+.blurb em {
+    font-style: normal;
+}
 a {
     color:  rgb(239, 64, 54);
     text-decoration:    none;
