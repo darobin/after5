@@ -76,7 +76,7 @@ p, li, dd, dt {
 
 /* Page Header */
 header {
-    background: rgb(239, 64, 54);
+    background: #fe6a65;
     padding-top:    4em;
 }
 header h1 {
@@ -112,7 +112,7 @@ blockquote {
 
 /* Footer */
 footer {
-    background: rgb(239, 64, 54);
+    background: #fe6a65;
     color:  #fff;
     padding-top:    2em;
     text-align: right;
@@ -134,7 +134,7 @@ p.last {
     header {
         border-left:    none;
         background: #fff;
-        color:  rgb(239, 64, 54);
+        color:  #fe6a65;
         padding:    0;
     }
     footer {
