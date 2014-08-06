@@ -1,4 +1,4 @@
-the-next-stand
-==============
+After 5
+=======
 
-The Next Stand — Where to take Web standards next
+Where HTML is going next, where standards are headed.
