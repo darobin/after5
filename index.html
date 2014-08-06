@@ -3,15 +3,35 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>The Next Stand</title>
+    <title>After 5</title>
     <link rel="stylesheet" href="css/release-the-kraken.css">
   </head>
   <body>
     <header>
-      <h1>The Next Stand</h1>
+      <h1>
+        <img src="logo-new-colours.svg" width="100" height="100" alt="Web Specs Logo">
+        After 5
+      </h1>
     </header>
     <div class="content">
       <div class="blurb">
+        <p>
+          As we approach the point at which HTML5 will become a Recommendation, it is time to think
+          about how HTML would best be handled next.
+        </p>
+        <p>
+          One thing is certain: it won’t be the way in which it has been handled over the past
+          couple years. The organisation over the period was targeted almost solely at shipping,
+          and therefore largely at cleaning things up on a deadline. But once that stage is reached,
+          no such organisation is needed.
+        </p>
+        <p>
+          The goal of this document is to propose a small set of basic principles for the
+          organisation of the HTML project after 5.0.
+        </p>
+      </div>
+      <section id="open">
+        <h2>Opening HTML</h2>
         <p>
           The idea that Web standards should be open and efforts to make them so have served us
           well. Over time, however, the ways in which people build the Web have evolved. The ways in
@@ -21,58 +41,94 @@
         </p>
         <p>
           The manner in which we create Web standards today lags behind the Web community’s
-          common practices. In 2012, a small group of standards organisations came together to
-          affirm the principles of openness known as the “<a
-          href='http://open-stand.org/principles/'>Open Stand</a>”. Fine principles, but
-          no longer sufficient. In order to deliver on the Web’s promise, we need to operate so as
-          to grant the full Web community stewardship over the platform. The Web has disrupted many
-          aspects of technology. It is time to have it disrupt the way in which we produce Web
-          standards. That is the <em>Next Stand</em>.
-        </p>
-        <p>
-          Web technology is a commons. We need to manage it as such.
+          common practices. Web technology is a commons; we need to manage it as such.
         </p>
         <p>
           There is much to do but examples such as the
           <a href='http://responsiveimages.org/'>RICG</a> or the
           <a href='http://dom.spec.whatwg.org/'>DOM</a> show that it is within reach and
-          tell us of the pitfalls to avoid. This document is not intended to be final; rather, in
-          keeping with the principles it upholds, it is
-          <a href='https://github.com/darobin/the-next-stand'>open for all to edit</a>.
+          tell us of the pitfalls to avoid.
         </p>
-        <!--
-          Make it clear that pull requests are welcome, even encouraged
-          RICG as a great example, we need more of this
-        -->
-      </div>
-      <section id="open">
-        <h2>What Is An Open Standard?</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-          ullamco laboris nisi ut aliquip ex ea <a href="">commodo</a> consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-          sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-          est laborum.
+          The following principles of openness are to guide the next stages of the HTML
+          specification.
+        </p>
+        <dl>
+          <dt>Forkable</dt>
+          <dd>
+            A decade or two ago, forking was perceived as a mode of failure. Today, it is a mode of
+            collaboration: <em>Make Forks Not War</em>. HTML was granted the right to produce its
+            specifications under a Creative Commons license, but that facility has not been put to
+            sufficient use so far. It will now be used to apply to all the new work items, since in
+            effect they are all extensions to HTML.
+          </dd>
+          <dt>Royalty-Free</dt>
+          <dd>
+            The new approach will naturally maintain our ability to ship documents through the W3C
+            Process so as to ensure that the Web remains open for all.
+          </dd>
+          <dt>Hackable</dt>
+          <dd>
+            A project is only open if it is indeed practicable to participate in it. Having access
+            to the code is not enough, it needs to be possible to genuinely process it, through the
+            usage of sane convention and open tools that are close enough to common developer
+            conventions that they can be picked up easily.
+          </dd>
+        </dl>
+      </section>
+      <section id="hack">
+        <h2>Enabling Hackability</h2>
+        <p>
+          The forkability and royalty-free properties are essentially process issues for which we
+          have existing solutions. As such, they are of little direct interest.
+        </p>
+        <p>
+          The issue of hackability requires further description though. Beyond the tooling details,
+          which are <abbr title="Simple Matter Of Programming">SMOPs</abbr>, a better understanding
+          of the goals and approach are useful to have.
+        </p>
+        <p>
+          To begin making HTML a hackable specification will be to split it up into as many pieces
+          as required. This is <em>not</em> modularisation as was envisaged previously for XHTML.
+          Rather, it is a simple application of the principles at work in software development that
+          make code more maintainable — and therefore more open.
+        </p>
+        <p>
+          In order to make the split up specification <em>and</em> forks and proposals from the
+          community comprehensible, specifications in progress will be made available together
+          under <code>drafts.webplatform.org</code>, including a master index of all those
+          specifications.
+        </p>
+        <p>
+          To avoid confusion and stay away from the complexities of W3C documents, the templates
+          used for the split extension specifications will be visually distinct from those that
+          have traditionally been used. (But they will be converted to the regular W3C layout when
+          published there.)
+        </p>
+        <p>
+          Specifications are in many ways similar to software products and an important part of
+          hackability is to support the same best practices in use there to enable maintainability.
+          This includes branching conventions, a distinction between stable features (as
+          demonstrated through testing) and development or topic branches where new proposals are
+          made.
         </p>
       </section>
     </div>
     <!--
     XXX
+    
+    
+      input type date still sucks many years into being available. We need better
+      this is about the extensible web
+    
+
+
+  Make it clear that pull requests are welcome, even encouraged
+
       
-      What is an Open Standard
+      guides for developers extracted from the likes of the QA framework and the Marcos/Dom document
+      CONTRIBUTING.md, everything under the CG CLA; then imported into the group(s)
       
-      Specifications should be more like software
-        - in how they are managed
-          - testing (see more below)
-        - in how they can be used
-          - live examples
-        - we are still handling specifications as if they were paper
-      
-      Testing
-        - a specification ought to include tests of its own features. These can then be more easily
-          woven into the text (by reference) and managed as the specification evolves.
-        - linting can be done
       
     -->
     
@@ -86,10 +142,6 @@
       <p class="last">
         Last updated on <span id="last-update">...</span>
       </p>
-      <!--
-        XXX
-          last update
-      -->
     </footer>
     <script>
       if (document.lastModified) {
