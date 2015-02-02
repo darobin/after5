@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name='viewport' content='width=device-width'>
+    <title>HTML Plan</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/robin.css" id="theme">
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+    <style>
+      .reveal p, .reveal li {
+        text-align: left;
+        font-size:  0.8em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h1>The HTML Plan</h1>
+          <h3>Advisory Board Edition</h3>
+          <p>
+            <small>
+              <a href="mailto:robin@berjon.com">Robin Berjon</a>
+              /
+              <a href="https://twitter.com/robinberjon">@robinberjon</a>
+              /
+              <a href="http://berjon.com/">http://berjon.com/</a>
+            </small>
+          </p>
+        </section>
+
+        <section>
+          <h2>The Gory Details</h2>
+          <p>
+            This presentation focuses on <strong>participation</strong> and the <strong>WHATWG</strong>.
+          </p>
+          <p>
+            Enquiring minds should feel free to consult the <a href="http://darobin.github.io/after5/html-plan.html">full plan</a>.
+          </p>
+        </section>
+
+        <section>
+          <h2>WHATWG Relationship</h2>
+          <p>
+            Cross-organisation discussions about process are tedious, invidious, and have an observed
+            low rate of success.
+          </p>
+          <p>
+            The core of the policy is therefore rooted in action and being a good citizen while
+            minding one’s own business as a group.
+          </p>
+          <p>
+            If the participation policy based on CGs succeeds, maybe a situation could arise in
+            which the WHATWG would become one such CG. But that is at best long-term.
+          </p>
+        </section>
+
+        <section>
+          <h2>WHATWG: HTML</h2>
+          <p>
+            Interference with the WHATWG is kept to a minimum by:
+          </p>
+          <ul>
+            <li>Automatic publishing (no cherry-picking)</li>
+            <li>Deforking where possible</li>
+            <li>Aiming to publish a strict subset</li>
+            <li>Moving additive work to other documents</li>
+          </ul>
+          <p>
+            We could reach a point at which the core HTML specification is emptied. But this is at
+            best far away.
+          </p>
+        </section>
+
+        <section>
+          <h2>WHATWG: DOM</h2>
+          <p>
+            The DOM specification is already under the automatic publishing and strict subset policy
+            that is suggested for HTML. As far as it reaches, it is a qualified success.
+          </p>
+          <p>
+            As detailed in the full plan however, taking it further to Recommendation is blocking
+            on some bugs. These are orthogonal to the WHATWG relationship however.
+          </p>
+        </section>
+
+        <section>
+          <h2>WHATWG: Other documents</h2>
+          <p>
+            The HTML WG does not expect to fork other documents. URL is getting its own group.
+          </p>
+        </section>
+
+        <section>
+          <h2>Participation: Problems</h2>
+          <p>
+            The HTML WG is seeing abysmal participation.
+          </p>
+          <ul>
+            <li>The core parts of HTML are not a priority for many</li>
+            <li>The large group and document are daunting</li>
+            <li>The bad history still scares people away</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Part°: (Qualified) Success</h2>
+          <p>
+            We have seen some qualified successes with participation broken up into smaller, more
+            focused groups.
+          </p>
+          <p>
+            Questions as to whether that constitutes sufficient data to build a decision upon, operating
+            with smaller focused groups makes intuitive sense.
+          </p>
+        </section>
+
+        <section>
+          <h2>Participation: Structure</h2>
+          <p>
+            Work is distributed to smaller groups, likely Community Groups (but exact modalities are
+            up for discussion). The HTML WG is used as a coordination platform amongst them.
+          </p>
+          <p>
+            CGs can choose their work mode, tooling, and licenses. However some specifics are
+            encouraged (WebApps work mode, WebSpecs tooling, W3C Software License). Experimentation
+            is welcome as it can inform us all quickly, with minimal discursive overhead.
+          </p>
+        </section>
+
+        <section>
+          <h2>Participation: Tooling (1)</h2>
+          <p>
+            CGs are encouraged to use GitHub. A tool for full-fledged backups will be needed.
+          </p>
+          <p>
+            The core group will be using Echidna.
+          </p>
+        </section>
+
+        <section>
+          <h2>Participation: Tooling (2)</h2>
+          <p>
+            All groups are welcome to use Discourse for general-purpose input from the community,
+            or for full-fledged discussions (as used by asm.js).
+          </p>
+          <p>
+            CGs (which can’t use Echidna) are encouraged to use the WebSpecs project which provides
+            automated publishing tooling at https://specs.webplatform.org/.
+          </p>
+        </section>
+
+        <section>
+          <h1>Thank you!</h1>
+          <p>
+            Questions?
+          </p>
+        </section>
+      </div>
+    </div>
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+    <script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'convex', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/notes/notes.js', async: true }
+        ]
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,133 @@
+/**
+ * Robin theme for reveal.js.
+ *
+ * Copyright (C) 2015 Robin Berjon
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+// Include theme-specific fonts
+@font-face {
+    font-family: 'Roboto';
+    src: url('../../fonts/robotoslab-regular-webfont.eot');
+    src: url('../../fonts/robotoslab-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/robotoslab-regular-webfont.woff2') format('woff2'),
+         url('../../fonts/robotoslab-regular-webfont.woff') format('woff'),
+         url('../../fonts/robotoslab-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('../../fonts/robotoslab-bold-webfont.eot');
+    src: url('../../fonts/robotoslab-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/robotoslab-bold-webfont.woff2') format('woff2'),
+         url('../../fonts/robotoslab-bold-webfont.woff') format('woff'),
+         url('../../fonts/robotoslab-bold-webfont.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Merriweather";
+    src: url("../../fonts/merriweather-light-webfont.eot");
+    src: url("../../fonts/merriweather-light-webfont.eot?#iefix") format("embedded-opentype"),
+         url("../../fonts/merriweather-light-webfont.woff") format("woff"),
+         url("../../fonts/merriweather-light-webfont.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Merriweather";
+    src: url("../../fonts/merriweather-bold-webfont.eot");
+    src: url("../../fonts/merriweather-bold-webfont.eot?#iefix") format("embedded-opentype"),
+         url("../../fonts/merriweather-bold-webfont.woff") format("woff"),
+         url("../../fonts/merriweather-bold-webfont.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Merriweather";
+    src: url("../../fonts/merriweather-bolditalic-webfont.eot");
+    src: url("../../fonts/merriweather-bolditalic-webfont.eot?#iefix") format("embedded-opentype"),
+         url("../../fonts/merriweather-bolditalic-webfont.woff") format("woff"),
+         url("../../fonts/merriweather-bolditalic-webfont.ttf") format("truetype");
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: "Merriweather";
+    src: url("../../fonts/merriweather-lightitalic-webfont.eot");
+    src: url("../../fonts/merriweather-lightitalic-webfont.eot?#iefix") format("embedded-opentype"),
+         url("../../fonts/merriweather-lightitalic-webfont.woff") format("woff"),
+         url("../../fonts/merriweather-lightitalic-webfont.ttf") format("truetype");
+    font-weight: normal;
+    font-style: italic;
+}
+
+
+// Override theme settings (see ../template/settings.scss)
+$mainFont: 'Merriweather', sans-serif;
+$mainColor: #333;
+$headingFont: 'Roboto', sans-serif;
+$headingColor: #333;
+$headingLetterSpacing: -0.03em;
+$headingTextShadow: 0px 0px 2px #ffffff;
+$backgroundColor: #f7fbfc;
+$linkColor: #3b759e;
+$linkColorHover: lighten( $linkColor, 20% );
+$selectionBackgroundColor: #134674;
+
+// Fix links so they are not cut off
+.reveal a {
+    line-height: 1.3em;
+}
+
+// Background generator
+html > body {
+    /* 3d.jpg | 3d-blur.jpg | 3d-desat.jpg | 3d-blur-desat.jpg |
+       maze-penrose.png |
+       quasi-light.jpg | # possibly the best option
+       small-penrose.gif | # darker
+       small-penrose.jpg | # lighter, possibly excellent
+       squarish-penrose.png */
+    background: url("../../bg/small-penrose.jpg") center no-repeat;
+    background-color:   #001122;
+    background-size:    cover;
+}
+
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+// overrides
+/*
+    colours:
+        bright pink:    #ff0dad
+        bright green:   #bfff00
+        bright blue:    #84f5fb
+        bright yellow:  #fffd60
+        bright orange:  #ffa100
+*/
+.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+    text-transform: none;
+}
+
+.reveal h1 {
+    background: #ffa100;
+    text-shadow: -2px 2px 0px #ffffff, 2px -2px 0px #ffffff, 2px 2px 0px #ffffff, -2px -2px 0px #ffffff;
+}
+.reveal h2 {
+    background: #ff0dad;
+    text-shadow: -2px 2px 0px #fff, 2px -2px 0px #fff, 2px 2px 0px #fff, -2px -2px 0px #fff;
+}
+.reveal h3 {
+    background: #84f5fb;
+    text-shadow: -2px 2px 0px #ffffff, 2px -2px 0px #ffffff, 2px 2px 0px #ffffff, -2px -2px 0px #ffffff;
+}
+
