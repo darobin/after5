@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>HTML Plan</title>
+    <link rel="stylesheet" href="css/release-the-kraken.css">
+  </head>
+  <body>
+    <header>
+      <h1>
+        <img src="logo-new-colours.svg" width="100" height="100" alt="Web Specs Logo">
+        HTML Plan
+      </h1>
+    </header>
+    <div class="content">
+      <div class="blurb">
+        <p>
+          Shipping HTML 5.0 to Recommendation consumed the lion's share of the work in the 
+          HTML Working Group for the better part of the past two years. With the drive to release
+          gone, it is time to reorganise the operation of the group in the manner most conducive
+          to improving the Web.
+        </p>
+        <p>
+          Altogether too often W3C working groups have constrained their thinking about how to
+          operate to a set of behaviours <em>perceived</em> to represent the requirements placed
+          upon them by the W3C Process. Much of the time, these constraints are imaginary. While
+          there is no denying that the production of royalty-free technology and a strong preference
+          for broad consensus do place some demands on a group's operation, there are many ways in
+          which a group can carry out its day-to-day work without such requirements getting in the
+          way. This document endeavours to pave such a way forward for the HTML WG.
+        </p>
+        <p>
+          At a high level, the requirements are (in no particular order):
+        </p>
+        <dl>
+          <dt>Levity</dt>
+          <dd>
+            The group's operation must be lightweight. Any manner of administrativia must be eyed
+            with suspicion and challenged. Where possible, automation should be applied.
+          </dd>
+          <dt>Action</dt>
+          <dd>
+            Doing > talking. Participants are strongly encouraged to do rather than ask, to attend to
+            exploration over coordination, to seek forgiveness rather than permission. Plans, such
+            as the one you are currently reading, need to be kept to a strict minimum and oriented
+            towards liberating rather than guiding.
+          </dd>
+          <dt>Peace</dt>
+          <dd>
+            It is a heavy understatement to say that the relationship between the HTML WG and other
+            groups has at times being invidious. Whatever history may exist with various parties,
+            this document invites the HTML WG to, in the words of a modern philosopher, “shake it
+            off”. The primary focus of the group is in providing a support base for the production
+            of useful standards. As such, and within the bounds of its mission, it shall strive to
+            be a good citizen and encourages resolving issues with minimal escalation — ideally
+            without involving the full group.
+          </dd>
+          <dt>Thoughtfulness</dt>
+          <dd>
+            Altogether too often has uncivil behaviour been tolerated in the standards community.
+            This should no longer be tolerated in any shape manner or form.
+          </dd>
+          <dt>Independence</dt>
+          <dd>
+            The Web platform is large, and the HTML specification a large chunk of it. Operating on
+            such large chunks as atomic units and broaching topics with a correspondingly large
+            group has negative side-effects. It is a core requirement to, as much as possible and
+            keeping in mind the risks associated with platform interactions, make it as easy as
+            possible for smaller, focused groups to work on documents and in groups with manageable
+            scale. Specifications that are too large remove responsibility from their editors by
+            creating “too big to fail” effects; a direct goal here is to make editors more
+            responsible for their production.
+          </dd>
+          <dt>Participation</dt>
+          <dd>
+            The level of participation in the HTML WG — and in standards production in general — is
+            too low. Both the structure and modality of work need to be oriented towards increasing
+            and facilitating participation. Contributing to the Open Web Platform should be no
+            harder than contributing to any open source project.
+          </dd>
+        </dl>
+      </div>
+      
+      <section id="org">
+        <h2>Organisation &amp; Work Mode</h2>
+        <p>
+          Looking at the parts of the HTML WG that have and have not been productive over the past
+          few years it seems clear that the main group has a poor track record to show for itself,
+          while useful work has taken place in more focused groups sitting at its periphery.
+        </p>
+        <p>
+          Certainly the adamantine focus on shipping that dominated the main group is part of this,
+          but not alone. There are several issues with working as part of a broad group:
+        </p>
+        <ul>
+          <li>Would-be participants report it as daunting;</li>
+          <li>The platform is broad while interests are often more specific;</li>
+          <li>It encourages drive-by comments;</li>
+          <li>It discourages participation from those who do not wish to handle a fire-hose;</li>
+          <li>
+            What dysfunctional behaviour may exist in the group tends to be suffered by all while
+            the parts that operate well mostly benefit (directly) those who care about them;
+          </li>
+          <li>
+            Coupled with a large document that carries a deep gravitational well it discourages
+            contributions.
+          </li>
+        </ul>
+        <p>
+          A single group is not without its advantages (notably built-in coordination) but in
+          practice they are outweighed by the issues. It is notable that groups that operate as one
+          large entity have resorted to filtering mechanisms, and in effect many participants are
+          known to tune out the parts they do not directly care about.
+        </p>
+        <p>
+          As a result, we recommend the following organisation for the group: focused topic areas,
+          some of which are currently handled as separate Task Forces, are to be handled in their
+          own Community Groups. The list of CGs need not be fixed, on the contrary it is expected
+          to evolve over time (within the boundaries of the HTML WG's charter).
+          <a href="#cgs">Examples of possible CGs</a> are given below.
+        </p>
+        <p>
+          CGs can organise as they wish to. They can involve broad participation without incurring
+          known issues relating notably to the Invited Expert agreement. Their process can be
+          radically lightweight, while still operating within the boundaries of an IPR policy.
+        </p>
+        <p>
+          CGs can notably publish forkable specification (see notes below on 
+          <a href="#licensing">licensing</a>). They need not rely on communication methods that are
+          often disliked by today's Web developers and can easily make use of more modern
+          alternatives (more on this in the <a href="#tooling">tooling section</a>).
+        </p>
+        <p>
+          Under this regime the HTML WG would serve as a coordination forum between CGs, helping to
+          sort out problems that may need cooperation amongst them or with the core HTML
+          specification (<a href="#draft">publication details for which</a> are outlined below). It
+          can also serve as a catch-all group for work that does not yet have a home of its own.
+        </p>
+        <p>
+          Technical disputes are encouraged to be addressed through forking and merging, the goal
+          being for dissent to operate on camera-ready documents.
+        </p>
+        <p>
+          CGs that produce Final Specifications can bring them to the HTML WG as a way to get them
+          to Recommendation relatively efficiently. As experience is gathered with this division of
+          labour, the HTML WG could set up procedures allowing for the automatic publication of
+          CG Final Specifications as Candidate Recommendations (which can be a FPWD at the same
+          time).
+        </p>
+        <p>
+          Community Groups have a broad mandate to organise themselves in whatever creative manner
+          they see fit, provided that:
+        </p>
+        <ul>
+          <li>They document where one can follow and participate the work;</li>
+          <li>
+            They, in practice, adhere to a form of consensus decision-making. Note that this can
+            vary very much from one instantiation to another.
+          </li>
+          <li>
+            They keep as good a paper trail as possible of contributions from participants. A good
+            example of such a paper trail would be commit logs or pull-requests.
+          </li>
+        </ul>
+        <p>
+          The expectation is that the core group would operate under the 2014 Process (without which
+          the FPWDCR is not possible).
+        </p>
+        <p>
+          The work mode for the core HTML group is to be derived directly from that of WebApps.
+          No regular telcons are to be held but ad hoc ones can be scheduled (and CGs are allowed
+          to make use of them is they so desire). Occasional face to face meetings are to be
+          expected, but may not involve the entire group (except at least once a year).
+        </p>
+      </section>
+      
+      <section id="tooling">
+        <h2>Open Tooling</h2>
+        <p>
+          Both the main group and its satellite CGs can make use of whatever tools they see fit for
+          a given specification, but we call out a number of options here as they are expected to
+          take up a central place in these operations.
+        </p>
+        <p>
+          For drafts under the control of an actual WG (since this is not an option we can offer CGs
+          yet) the new “Echidna” automated publishing system that is soon to be deployed is strongly
+          encouraged. This tool essentially allows a group to use 
+          <a href="http://w3.org/TR/">http://w3.org/TR/</a> for its Editor's Drafts. Editors can
+          set their draft up such that any commit triggers a new publication there. This is designed
+          to avoid TR space from going stale. As many WDs as are needed can be published, every day.
+        </p>
+        <p>
+          Groups that so desire are welcome to make use of GitHub, not just for repositories but
+          also for discussion if that is their preference. A tool that makes it possible to backup
+          not just the <code>git</code> part but also the issues, comments, etc. is expected to be
+          made available when time allows it. This should address concerns over migration should the
+          need arise.
+        </p>
+        <p>
+          <a href="http://discourse.specifiction.org/">Discourse</a> is already available for
+          broad discussions with the community. Groups are welcome to request new categories that
+          match their needs better than those already in existence (as was done by the
+          <a href="http://discourse.specifiction.org/c/asm-js">asm.js</a> folks). The current
+          administrators are happy to mint moderators and support the mode of operation required
+          by groups wishing to work there.
+        </p>
+        <p>
+          Finally, the <a href="https://specs.webplatform.org/docs/">WebSpecs</a> project is open to
+          every and all project that wishes to use it as a publishing platform at which to maintain
+          its documents. The project is specifically designed to publish from GitHub repositories
+          with very minimal overhead (once you have a specification ready, integrating the project
+          is pretty much one pull request away) while avoiding the scattered nature and complexity
+          of dozens of GitHub repositories that can be hard to find. It also operates on the core
+          assumption that multiple forked version of the same specification can be maintained at the
+          same time in order to facilitate discussion (and, eventually, merge).
+        </p>
+      </section>
+      
+      <section id="draft">
+        <h2>Core HTML Draft Publication</h2>
+        <p>
+          While the CGs may publish as they please, the core HTML WG at present retains the
+          responsibility of publishing the HTML specification itself. The publication is expected to
+          operate under the following requirements:
+        </p>
+        <ul>
+          <li>Be frequent;</li>
+          <li>Minimise additive differences with the WHATWG version (but have extensive leeway to subset it);</li>
+          <li>Aspire to be as close to reality, as supported by testing, as possible;</li>
+          <li>Avoid the overhead of errata as much as possible, ideally completely;</li>
+          <li>Be automated in every manner possible.</li>
+        </ul>
+        <p>
+          The frequency is expected to be achieved through two-fold automation. First, the draft is
+          maintained as a set of transformations to the WHATWG's version. This avoids synchronisation
+          issues that have made work slow and painful in the past. The ideal goal is to reach a
+          point at which this specific document is just a subset of WHATWG HTML with two types of
+          excisions: parts that do not match reality, and parts that are being developed in separate
+          documents. Second, the output from that transformation are to be fed into the new
+          automated publishing system and published under <code>/TR/html</code>. As a part of
+          HTML, the 2DContext specification can expect the same treatment.
+        </p>
+        <p>
+          It should be noted that while a strict subset is the desirable option, there are cases
+          in which it is not entirely possible. Keeping such cases to a minimum is, however, an
+          express goal.
+        </p>
+        <p>
+          The astute reader may note at this point that this organisation takes steps towards
+          establishing the WHATWG as one CG (which it already is) that publishes through its
+          coordination with the HTML WG, with modifications made to account for the atypical nature
+          of the document. There are several ways in which such a setup would be desirable, and the
+          organisation is deliberate. However it should be noted that it is not at this point a
+          political reality, that making it so would require a number of issues between the two
+          groups to be addressed, and that no claim is made here about endorsement from the WHATWG
+          for this policy.
+        </p>
+        <p>
+          The DOM specification is expected to follow a similar treatment, modulo the fact that
+          strict subsetting (corresponding exclusively to test-failing) is far more likely. Having
+          said that, some interoperability issues with the DOM that cannot be subsetted away are
+          currently pending implementer input, and without such input the specification may,
+          according to the principles expressed herein, find itself on indefinite hold.
+        </p>
+        <p>
+          No other WHATWG specifications are expected to be forked and published by the HTML WG,
+          unless specifically done in conjunction between the two groups.
+        </p>
+        <p>
+          The expectation is that the HTML specification will go to Recommendation every year,
+          based on the features it contains that have tests and pass them sufficiently well. Rules
+          concerning which tests ought to pass or not tend to have nasty side-effect (e.g. removing
+          tests to ensure that the document passes and other such weaselling). Instead, the
+          recommended practice is to make use of judgement calls when assessing interoperability,
+          the key components of which being rough usability by developers and improvements compared
+          to the previous year's situation.
+        </p>
+        <p>
+          Even with the improvements to the errata process, one has to question whether it is useful
+          to maintain errata against HTML. Errata are valuable in the case in which no new features
+          are being added to a specification, and patent commitments that were made for an existing
+          Recommendation may no longer be made for the revised one.
+        </p>
+        <p>
+          HTML is not in such a situation. HTML is seeing new features, and we are not seeing major
+          shifts in participation. The expectation is that publishing a Recommendation every year
+          is sufficient to obviate the need for errata. Where required, these could be exposed
+          as a diff of the documents as is likely to become possible with Process 2015 (note however
+          that such a diff would likely be large and hard to review).
+        </p>
+      </section>
+      
+      <section id="issues">
+        <h2>Bug Triage</h2>
+        <p>
+          A large bug backlog has accumulated while the group focused on shipping. These bugs need
+          to be ventilated and triaged amongst those that have been overtaken by events, those that
+          have been fixed, those that aren't relevant to the core document and those that,
+          shockingly enough, need to be fixed.
+        </p>
+        <p>
+          Triaging the latter will require knowing where they need to be sent. This depends largely
+          on the setup described herein coming into effect. It should be noted that some CGs may
+          prefer bug tracking systems other than Bugzilla. In such cases the bugs will be moved there
+          and the original tracker appraised accordingly.
+        </p>
+      </section>
+      
+      <section id="licensing">
+        <h2>Licensing</h2>
+        <p>
+          The HTML WG's CC-BY experiment needs to be updated and revisited. It has surfaced recently
+          that the W3C Software License would actually be a great choice for all of our documents.
+          It is better than CC0, offers the desired guarantees from CC-BY, but is GPL-compatible. In
+          other words it addresses the use cases that lead the WHATWG to use CC0 but is overall
+          friendlier in that one does not renounce authorship. It is also the default copyright
+          license in the <a href="https://www.w3.org/2009/12/Member-Agreement">W3C Member Agreement
+          (last 2 sentences of 7b)</a> which states that “copyrightable materials (…) will be made
+          available to the general public pursuant to the then-current W3C Software Notice and
+          License.”
+        </p>
+        <p>
+          We could characterise the outcome of the CC-BY experiment as follows:
+        </p>
+        <ul>
+          <li>Several drafts were published under CC-BY. Not an overwhelming number in the grand 
+              scheme of things, but nevertheless the majority given the general apathy of the
+              group.
+          <li>It has proven an option attractive enough for other groups to request the same.
+          <li>Not one single request to publish under CC-BY was rejected (or in fact questioned).
+          <li>However, it does not address the use cases put forth by the proponents of CC0. The 
+              primary (possibly only) use case that CC-BY does not address is GPL-compatibility.
+        </ul>
+        <p>
+          Therefore, given:
+        </p>
+        <ul>
+          <li>The consensual nature of CC-BY amongst most of the group; and
+          <li>The remaining issue with CC-BY being GPL-compatibility;
+        </ul>
+        <p>
+          we propose an extensive switch to a license that has the attribution and protection
+          promises of CC-BY and is GPL-compatible: the W3C Software License. Doing so for the
+          main HTML WG is desirable, but would require the agreement of the AC. CGs however can
+          freely adopt the license they desire and we suggest that they should use the
+          W3C Software License unless overwhelming reasons not to are put forth.
+        </p>
+      </section>
+      
+      <section id="cgs">
+        <h2>Example CGs</h2>
+        <p>
+          The set of satellite CGs is meant to be dynamic and evolve over time in a flexible manner,
+          the sole constraint being the chartered boundaries of the HTML WG. Here are however a few
+          examples that could provide good starting grounds based on existing experience.
+        </p>
+        <dl>
+          <dt>Editing
+          <dd>
+            This is already well under way in the TF but it is hitting up a few Invited Expert
+            issues and could live with being a CG rather than the always clunky joint-TF.
+          </dd>
+          <dt>Media APIs
+          <dd>
+            New APIs are needed, and some coherence could usefully be brought amongst all the
+            people extending HTMLMediaElement. Some recent ideas about media controls could also
+            fit here.
+          </dd>
+          <dt>Markup for Application UIs
+          <dd>
+            There may be a set of elements that could usefully be added to HTML for
+            (semantic) application components. Some work has already kicked off (in a deliberately
+            discreet corner) about this and there is interest from some browser vendors. Also: form
+            controls are still a problem.
+          </dd>
+        </dl>
+      </section>
+    </div>
+    <footer>
+      <p>
+        <a href="http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231" rel="license">W3C Software License</a> •
+        <a href="https://github.com/darobin/after5">fork this</a> •
+        <a href="http://berjon.com/">Robin Berjon</a> •
+        <a href="https://twitter.com/robinberjon">@robinberjon</a>
+      </p>
+      <p class="last">
+        Last updated on <span id="last-update">...</span>
+      </p>
+    </footer>
+    <script>
+      if (document.lastModified) {
+          document.lastModified.replace(/(\d\d)\/(\d\d)\/(\d{4})/, function (m, month, day, year) {
+              document.getElementById("last-update").textContent = [year, month, day].join("-");
+          });
+      }
+    </script>
+  </body>
+</html>
