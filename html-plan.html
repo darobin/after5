@@ -318,22 +318,31 @@
           <li>Be automated in every manner possible.</li>
         </ul>
         <p>
-          Note that “additive” describes features defined as part of the HTML WG.
+          Note that “additive” describes features defined as part of the HTML WG or one of its
+          satellite groups. New features defined in the WHATWG, if acceptable and deemed to match
+          reality, will simply be included.
         </p>
         <p>
           The frequency is expected to be achieved through two-fold automation. First, the draft is
-          maintained as a set of transformations to the WHATWG’s version. This avoids synchronisation
-          issues that have made work slow and painful in the past. The ideal goal is to reach a
-          point at which this specific document is just a subset of WHATWG HTML with two types of
-          excisions: parts that do not match reality, and parts that are being developed in separate
-          documents. Second, the output from that transformation are to be fed into the new
-          automated publishing system and published under <code>/TR/html</code>. As a part of
-          HTML, the 2DContext specification can expect the same treatment.
+          maintained as a set of transformations to the WHATWG’s version using a tool called
+          “Spork”. These transformation are specified, as code, by the editors in charge of the
+          HTML draft at W3C (the list of whom still needs to be established).
+          This avoids synchronisation issues that have made work slow and painful in the
+          past and serves to maintain the Landscape Document as direct documentation of Spork’s
+          operations. The ideal goal is to reach a point at which this specific document is just a
+          subset of WHATWG HTML with two types of excisions: parts that do not match reality, and
+          parts that are being developed in separate documents. Second, the output from that
+          transformation are to be fed into the new Echidna automated publishing system and
+          published under <code>/TR/html</code>. As a part of HTML, the 2DContext specification can
+          expect the same treatment.
         </p>
         <p>
-          It should be noted that while a strict subset is the desirable option, there are cases
-          in which it is not entirely possible. Keeping such cases to a minimum is, however, an
-          express goal.
+          It should be noted that while a strict subset is the desirable option, there are cases in
+          which it is not entirely possible. To take an example from the previous iteration, while
+          in an ideal situation the ruby section of the core HTML specification could have been
+          dropped and replaced with a separate module, the interactions of that feature with the
+          parsing algorithm did not make that a viable option. Keeping such cases to a minimum is,
+          however, an express goal.
         </p>
         <p>
           The astute reader may note at this point that this organisation takes steps towards
@@ -344,6 +353,18 @@
           political reality, that making it so would require a number of issues between the two
           groups to be addressed, and that no claim is made here about endorsement from the WHATWG
           for this policy.
+        </p>
+        <p>
+          During the drive to get HTML to Recommendation, the process employed was one of manual
+          cherry-picking. Editors would both apply their own changes and integrate upstream changes
+          from WHATWG HTML. One purported benefit of this approach was that group members were given
+          the opportunity to disagree with the acceptance or rejection of upstream changes. In
+          practice, this opportunity was seldom used and the cherry-picking process was essentially
+          a very costly way of accepting WHATWG changes. This proposal removes the cost — which it
+          is unclear that anyone is willing to financially support or technically implement anyway —
+          while still making it possible for participants to maintain the ability to review accepted
+          or rejected changes simply by tracking the commit logs from the upstream HTML and Spork
+          repositories.
         </p>
         <p>
           The DOM specification is expected to follow a similar treatment, modulo the fact that
@@ -383,21 +404,24 @@
           duplication is at best a waste of effort and at worst induces confusion on its own.
         </p>
         <p>
-          In general, for “everyday” kind of bugs, the suggestion is to handle them directly in the
-          WHATWG. This may not be a consensual proposal, but experience with handling the
-          duplication has proven unpleasant (and wasteful). Alternatives suggestions are welcome;
-          but the goal is just to be simple and efficient (that there’s enough work for everyone and
-          then some).
+          When finding a bug in the core HTML specification, reviewers are expected to file it
+          against
+          <a href="https://www.w3.org/Bugs/Public/enter_bug.cgi?product=WHATWG&amp;component=HTML">the 
+          HTML component of the WHATWG product</a> in W3C’s Bugzilla and solely there. This may not
+          be a consensual proposal, but experience with handling the duplication has proven
+          unpleasant (and wasteful). Alternatives suggestions are welcome; but the goal is just to
+          be simple and efficient (that there’s enough work for everyone and then some).
         </p>
         <p>
-          For larger proposals, the default mode of operation is to modularise a chunk where
-          possible.
+          If the resolution of a given bug is not satisfactory (either to the reporting individual
+          or to a third-party), it should be duplicated to the HTML product for further discussion
+          in the group.
         </p>
         <p>
-          The question of escalation remains open. What happens if you filed a bug against WHATWG
-          HTML and you don’t like the outcome? In the past the HTML WG has been used as a an avenue
-          to help address things gone wrong in the WHATWG (and could generalise that to other CGs),
-          on the other such situations can become hostile quickly.
+          For new features, the default mode of operation is for them to be defined in a separate
+          document. They should therefore be directed to a CG if one exists that matches in scope,
+          or failing that to <a href="http://discourse.specifiction.org/">Discourse</a> where the
+          community can help orient the proposal to its proper home, setting it up if needed.
         </p>
         <p>
           A large bug backlog has accumulated while the group focused on shipping. These bugs need
