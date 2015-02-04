@@ -93,7 +93,7 @@ div.blurb {
     font-style: italic;
     margin-top: 2em;
 }
-.blurb em {
+.blurb em, .blurb i {
     font-style: normal;
 }
 a {
