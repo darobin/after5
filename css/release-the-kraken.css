@@ -96,6 +96,13 @@ div.blurb {
 .blurb em, .blurb i {
     font-style: normal;
 }
+div.disclaimer {
+    border: 1px solid #900;
+    border-radius:  5px;
+    background: #fee;
+    padding:    0 1em;
+    margin: 1em 0;
+}
 a {
     color:  rgb(239, 64, 54);
     text-decoration:    none;
