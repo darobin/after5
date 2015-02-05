@@ -26,6 +26,7 @@
         text-align: left;
         font-size:  0.8em;
       }
+      .reveal dd, .reveal li {padding-bottom: 0.6em}
     </style>
   </head>
   <body>
@@ -34,213 +35,139 @@
         <section>
           <h1>The HTML Plan</h1>
           <h3>Advisory Board Edition</h3>
-          <p>
-            <small>
+          <small>
+          <ul>
+          <li>
               <a href="mailto:robin@berjon.com">Robin Berjon</a>
               /
               <a href="https://twitter.com/robinberjon">@robinberjon</a>
               /
               <a href="http://berjon.com/">http://berjon.com/</a>
-            </small>
-          </p>
-        </section>
-
-        <section>
-          <h2>The Gory Details</h2>
-          <p>
-            This presentation focuses on <strong>participation</strong> and the <strong>WHATWG</strong>.
-          </p>
-          <p>
-            Enquiring minds should feel free to consult the <a href="http://darobin.github.io/after5/html-plan.html">full plan</a>.
-          </p>
-        </section>
-
-        <section>
-          <h2>WHATWG Relationship</h2>
-          <p>
-            Cross-organisation discussions about process are tedious, invidious, and have an observed
-            low rate of success.
-          </p>
-          <p>
-            The core of the policy is therefore rooted in action and being a good citizen while
-            minding one’s own business as a group.
-          </p>
-          <p>
-            If the participation policy based on CGs succeeds, maybe a situation could arise in
-            which the WHATWG would become one such CG. But that is at best long-term.
-          </p>
-        </section>
-
-        <section>
-          <h2>WHATWG: HTML</h2>
-          <p>
-            Interference with the WHATWG is kept to a minimum by:
-          </p>
-          <ul>
-            <li>Automatic publishing (no cherry-picking)</li>
-            <li>Deforking where possible</li>
-            <li>Aiming to publish a strict subset</li>
-            <li>Moving additive work to other documents</li>
-            <li>Reviewers are asked to file bugs against the WHATWG HTML spec </li>
+          </li>
+          <li>
+              <a href="mailto:rubys@intertwingly.net">Sam Ruby</a>
+              /
+              <a href="https://twitter.com/samruby">@samruby</a>
+              /
+              <a href="http://intertwingly.net/">http://intertwingly.net/</a>
+          </li>
+          <li>
+              <a href="mailto:Paul.Cotton@microsoft.com">Paul Cotton</a>
+              /
+              <a href="https://msopentech.com/blog/author/paulcotton/">https://msopentech.com/blog/author/paulcotton/</a>
+          </li>
+          <li>
+              <a href="mailto:plh@w3.org">Philippe Le Hégaret</a>
+              /
+              <a href="https://twitter.com/plhw3org">@plhw3org</a>
+              /
+              <a href="http://www.w3.org/People/LeHegaret/">http://www.w3.org/People/LeHegaret/</a>
+          </li>
           </ul>
-          <p>
-            We could reach a point at which the core HTML specification is emptied and only 
-            contained in modules. But this is at best far away.
-          </p>
+          </small>
         </section>
 
         <section>
-          <h2>WHATWG: DOM</h2>
-          <p>
-            The DOM specification is already under the automatic publishing and strict subset policy
-            that is suggested for HTML. As far as it reaches, it is a qualified success.
-          </p>
-          <p>
-            As detailed in the full plan however, taking it further to Recommendation is blocking
-            on some bugs. These are orthogonal to the WHATWG relationship however.
-          </p>
+          <h2>Participation</h2>
+          <dl>
+            <dt>Problem:</dt>
+            <dd>Large group &#8658; lack of focus &#8658; lack of participation</dd>
+
+            <dt>Solution:</dt>
+            <dd>Organize as a federation of smaller groups</dd>
+
+            <dt>Details:</dt>
+            <dd>Move work from Task Forces to Community Groups</dd>
+          </dl>
         </section>
 
         <section>
-          <h2>WHATWG: Other documents</h2>
-          <p>
-            The HTML WG does not expect to fork other documents.
-          </p>
+          <h2>Consensus</h2>
+          <dl>
+            <dt>Problem:</dt>
+            <dd>Delegate while retaining consensus as a value</dd>
+
+            <dt>Solution:</dt>
+            <dd>Output of CG is input to WG</dd>
+
+            <dt>Details:</dt>
+            <dd><a href="http://www.w3.org/community/about/">CG</a>
+            <a href="http://www.w3.org/community/about/agreements/final/">FSA</a> becomes
+            <a href="http://www.w3.org/Consortium/activities">WG</a>
+            <a href="http://www.w3.org/2014/Process-20140801/#first-wd">FPWD</a>/
+            <a href="http://www.w3.org/2014/Process-20140801/#candidate-rec">CR</a></dd>
+          </dl>
         </section>
 
         <section>
-          <h2>Participation: Problems</h2>
-          <p>
-            The HTML WG is seeing abysmal participation outside its task forces.
-          </p>
+          <h2>Resources</h2>
+          <dl>
+            <dt>Problem:</dt>
+            <dd>Lack of editor/test resources</dd>
+
+            <dt>Solution:</dt>
+            <dd>Reduce duplication, eliminate errata</dd>
+
+            <dt>Details:</dt>
+            <dd>Delegate bug triage to WHATWG;<br/>annual HTML recommendations</dd>
+          </dl>
+        </section>
+
+        <section>
+          <h2>Resources</h2>
+          <dl>
+            <dt>Problem:</dt>
+            <dd>IPR issues are a stumbling block for working with WHATWG</dd>
+
+            <dt>Solution:</dt>
+            <dd>Embrace forking/merging as a mode of operation</dd>
+
+            <dt>Details:</dt>
+            <dd>Adopt W3C Software License for Specifications</dd>
+          </dl>
+        </section>
+
+        <section>
+          <h2>Key differences</h2>
           <ul>
-            <li>The core parts of HTML are not a priority for many</li>
-            <li>The large group and document are daunting</li>
-            <li>The bad history still scares people away</li>
-            <li>Financial and technical costs of cherry picking </li>
-          </ul>
+            <li>Reviewers are asked to file bugs against the WHATWG HTML spec</li>
+            <li>Automatic publishing - no cherry-picking</li>
+            <li>New work done in autonomous Community Groups</li>
+            <li>Encourage pull requests as a best practice for conflict resolution.</li>
+          </dl>
         </section>
 
         <section>
-          <h2>Part°: Browser Vendors</h2>
-          <p>
-            Browser vendors are often disengaged from the group, some don't even show up at meetings.
-            Yet, getting them to provide input as to how the group should operate can prove difficult.
-          </p>
-          <p>
-            One option, given their lack of interest, is to simply disband the WG. Renewing the WG
-            charter should only be done if there is clear evidence of commitment by browser vendors
-            — under whatever mode of operation works.
-          </p>
-        </section>
-
-        <section>
-          <h2>Part°: (Qualified) Success</h2>
-          <p>
-            We have seen some qualified successes with participation broken up into smaller, more
-            focused groups.
-          </p>
-        </section>
-
-        <section>
-          <h2>Participation: Structure</h2>
-          <p>
-            Work is distributed to smaller groups, likely Community Groups (but exact modalities are
-            up for discussion). The HTML WG is used as a coordination platform amongst them as well
-            as the group responsible for bringing their documents to the Rec-track.
-          </p>
-          <p>
-            CGs can choose their work mode, tooling, and licenses. However some specifics are
-            encouraged (WebApps work mode, WebSpecs tooling, 
-            <a href="http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231">W3C 
-            Software License</a>). Experimentation is encouraged as it can inform us all quickly, with
-            minimal discursive overhead.
-          </p>
-        </section>
-
-        <section>
-          <h2>Participation: Tooling (1)</h2>
-          <p>
-            CGs are encouraged to use GitHub. A tool for full-fledged backups will be needed.
-          </p>
-          <p>
-            The core group will be using <a href="https://github.com/w3c/echidna">Echidna</a>.
-          </p>
-        </section>
-
-        <section>
-          <h2>Participation: Tooling (2)</h2>
-          <p>
-            All groups are encouraged to use Discourse for general-purpose input from the community,
-            or for full-fledged discussions (as used by asm.js).
-          </p>
-          <p>
-            CGs (which can’t use Echidna) are encouraged to use the WebSpecs project which provides
-            automated publishing tooling at https://specs.webplatform.org/.
-          </p>
-        </section>
-
-        <section>
-          <h2>Technical Disputes in CGs</h2>
-          <p>
-            These make use of forking-merging so as to operate on camera-ready documents. If a
-            pull request fails to reach consensus, the broader assembly looks at it, applying the
-            group decision as per usual.
-          </p>
-          <p>
-            Disputes not grounded in concrete proposals are summarily dismissed.
-          </p>
-          <p>
-            The HTML WG makes its decision based on the same requirements.
-          </p>
-        </section>
-
-        <section>
-          <h2>How Does This Help? (1)</h2>
-          <p>
-            <em>The HTML WG has the reputation of being all about meta planning and not at all about
-            actual work.</em>
-          </p>
-          <p>
-            Smaller, focused, distributed, independent groups have less of that.
-          </p>
-        </section>
-
-        <section>
-          <h2>How Does This Help? (2)</h2>
-          <p>
-            <em>Participating in open standards is harder then participating in open source, for
-            no good reason, as discussed a while ago in
-            <a href="http://darobin.github.io/after5/">After5</a>. This prevents participation from
-            developers.</em>
-          </p>
-          <p>
-            Adopting tools, processes, and infrastructure that are closer to today's open source
-            community can only help in this area.
-          </p>
-        </section>
-
-        <section>
-          <h2>How Does This Help? (3)</h2>
-          <p>
-            <em>In a singular group flamewars burn all the ground.</em>
-          </p>
-          <p>
-            Splitting avoids cases in which the group becomes the battleground for everyone's issues.
-            It doesn't bore people who are interested in items more on the edges with what happens
-            in the stabilised core.
-          </p>
+          <h2>Key dates</h2>
+          <ul>
+            <li>Updated HTML 5.1 Editor's draft: February 2015</li>
+            <li>Deployment of plan by WG: during the spring F2F</li>
+            <li>Rechartering of group: June 2015</li>
+            <li>HTML 5.1 Recommendation: year end 2015 (aggressive target)</li>
+          </dl>
         </section>
 
         <section>
           <h2>Open Questions to the AB</h2>
           <ul>
+            <li>Is delegating triage of HTML bugs to the WHATWG acceptable?</li>
             <li>Is our proposed handling of errata acceptable?</li>
             <li>Does the AB have an opinion on our “supergroup” organisation?</li>
             <li>Is our licensing strategy good?</li>
             <li>Is our plan likely to lead to better browser vendor engagement?</li>
             <li>Given a CG-based model, what is the incentive for Members to participate?</li>
           </ul>
+        </section>
+
+        <section>
+          <h2>The Gory Details</h2>
+          <p>
+            This presentation focused on <strong>participation</strong> and
+the <strong>WHATWG</strong>.
+          </p>
+          <p>
+            Enquiring minds should feel free to consult the <a href="http://darobin.github.io/after5/html-plan.html">full plan</a>.
+          </p>
         </section>
 
         <section>
