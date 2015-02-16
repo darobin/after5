@@ -77,10 +77,11 @@
         <p>
           Perhaps most notably, considering that duplication of work is a net loss to progressing
           the Web as are manual integration costs (e.g. from cherry-picking individual changes),
-          this plan explicitly delegates the initial triage of some core parts of the Web platform to
-          the WHATWG. While this may strike some as a radical change it is in truth nothing but the
-          ratification of an existing reality. The primary benefit over denialism on this topic is
-          the freeing of resources that it enables.
+          this plan explicitly makes the WHATWG bugzilla instance at W3C the first location at which
+          to report bugs about the HTML specification. While this may strike some as a radical
+          change it is in truth nothing but the ratification of an existing reality. The primary
+          benefit over denialism on this topic is the freeing of resources that it enables. The
+          ability to escalate issues to the HTML WG is however provided for.
         </p>
         <p>
           It must be noted however that this acquiescence to reality comes not without its pitfalls.
@@ -93,15 +94,13 @@
           agreement on IPR-friendly stable snapshots.
         </p>
         <p>
-          The question of escalation is more subtle. 
-          While the overwhelming majority of bugs processed in the development of
-          the WHATWG HTML Living Standard are resolved in ways that meet the W3C
-          definition of 
-          <a href="http://www.w3.org/2014/Process-20140801/#Consensus">consensus</a>,
-          WHATWG HTML does however suffer from
-          “<a href="http://berjon.com/is-html-too-big-to-fail/">too big to fail</a>” externalities
-          that decrease the editor’s responsibility for his actions and thereby negatively affect
-          the specification’s evolution.
+          The question of escalation is more subtle. While the overwhelming majority of bugs
+          processed in the development of the WHATWG HTML Living Standard are resolved in ways that
+          meet the W3C definition of <a
+          href="http://www.w3.org/2014/Process-20140801/#Consensus">consensus</a>, WHATWG HTML does
+          however suffer from “<a href="http://berjon.com/is-html-too-big-to-fail/">too big to
+          fail</a>” externalities that decrease the editor’s responsibility for his actions and
+          thereby negatively affect the specification’s evolution.
         </p>
         <p>
           These issues must be accounted for in our plan. We must operate such that these additional
@@ -238,11 +237,11 @@
           status and produce heartbeats. To address that, CGs that produce <a
           href="http://www.w3.org/community/about/agreements/final/">Final Specifications</a> can
           bring them to the HTML WG as a way to get them to Recommendation relatively efficiently,
-          provided they have undergone credible levels of review, which naturally includes a
-          reasonable amount of testing. As experience is gathered with this division of labour, the
-          HTML WG could set up procedures allowing for the automatic publication of CG Final
-          Specifications as Candidate Recommendations (which can be a First Public Working Draft at
-          the same time).
+          provided they have undergone credible levels of review, notably horizontal review (I18N,
+          A11Y, etc.) which naturally includes a reasonable amount of testing. As experience is
+          gathered with this division of labour, the HTML WG could set up procedures allowing for
+          the automatic publication of CG Final Specifications as Candidate Recommendations (which
+          can be a First Public Working Draft at the same time).
         </p>
         <p>
           When a Final Specification is accepted for publication by the HTML WG, if its content is
@@ -307,6 +306,14 @@
           the Invited Expert and Collaborator Agreement</a> is expected to be in effect, which will
           address this problem.
         </p>
+        <p>
+          It is also worth noting that while CGs have been chosen as an organisational vehicle here
+          in order to benefit from their flexibility notably with respect to the licensing and
+          invited expert issues, it could be preferable to solve those issues at the WG level.
+          Should that happen, using TFs instead of CGs should work just as well. Ideally,
+          participants should be shielded from such discussions and from the operational differences
+          they imply.
+        </p>
       </section>
       
       <section id="tooling">
@@ -361,7 +368,10 @@
         </p>
         <ul>
           <li>Be frequent;</li>
-          <li>Minimise additive differences with the WHATWG version (but have extensive leeway to subset it);</li>
+          <li>
+            Minimise additive differences with the WHATWG version (but have extensive leeway to
+            subset it);
+          </li>
           <li>Aspire to be as close to reality, as supported by testing, as possible;</li>
           <li>Avoid the overhead of errata as much as possible, ideally completely;</li>
           <li>Be automated in every manner possible.</li>
@@ -461,9 +471,9 @@
         </p>
         <p>
           In the future, when finding a bug in the core HTML specification, reviewers are expected
-          to file it against
+          to file it first against
           <a href="https://www.w3.org/Bugs/Public/enter_bug.cgi?product=WHATWG&amp;component=HTML">the 
-          HTML component of the WHATWG product</a> in W3C’s Bugzilla and solely there. This proposal
+          HTML component of the WHATWG product</a> in W3C’s Bugzilla. This proposal
           may not be consensual, but experience with handling the duplication has proven unpleasant
           (and wasteful). Alternatives suggestions are welcome; but the goal is just to be simple
           and efficient since there’s enough work for everyone and then some.
@@ -471,7 +481,12 @@
         <p>
           If the resolution of a given bug is not satisfactory (either to the reporting individual
           or to a third-party), it should be duplicated to the W3C Bugzilla HTML product for further
-          discussion in the HTML WG, or to the corresponding CG bug tracker if applicable.
+          discussion in the HTML WG, or to the corresponding CG bug tracker if applicable. Specific
+          groups or individuals who have had clearly unpleasant interactions with the WHATWG in the
+          past and feel it would be demoralising or demotivating to interact directly with the
+          WHATWG to report HTML bugs can, after discussing the issue with the chairs of the HTML WG,
+          skip straight to reporting bugs to the HTML WG. But in no case should bugs be reported
+          twice as a first step.
         </p>
         <p>
           For new features, the default mode of operation is for them to be defined in a separate
@@ -519,6 +534,13 @@
           desirable, but would require the agreement of the AC. CGs however can freely adopt the
           license they desire and we suggest that they should use the W3C Software License unless
           overwhelming reasons not to are put forth.
+        </p>
+        <p>
+          <strong>Note:</strong> using a license explicitly labelled as being for “Software” might
+          strike some — notably lawyers — as strange, and justifiably so. PSIG is currently
+          discussing an update that would change the license’s title and replace “software” with
+          “work” to clarify this point. This approach is in line with the general thinking of the
+          open licenses community on this topic.
         </p>
       </section>
 
